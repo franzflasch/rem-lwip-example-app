@@ -1,0 +1,10 @@
+sw_package.set_src("main.c mchdrv.c tcp_echoserver.c app_ethernet.c app_ping.c testapp.c")
+sw_package.set_src("enc28j60/enc28j60.c")
+
+sw_package.set_inc(".")
+sw_package.set_inc("enc28j60")
+
+sw_package.set_arch("arm")
+sw_package.set_mach("stm32f3")
+sw_package.set_dep("mach-stm32f3 lwip lwip-opts openmicromake spi_common")
+sw_package.set_def("ENC28J60_USE_PBUF")

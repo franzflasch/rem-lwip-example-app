@@ -1,0 +1,10 @@
+sw_package.set_inc(".")
+sw_package.set_src("mach-stm32f3.c
+                   ")
+
+sw_package.set_dep("libopencm3 openmicromake OMM_mach_stm32_common spi_common soft_spi")
+sw_package.set_arch("arm")
+sw_package.set_mach("stm32f3")
+sw_package.set_def("STM32F3")
+sw_package.set_global_define("STM32_SYSTEM_CLOCK=72000000")
+#sw_package.set_global_define("STM32_SYSTEM_CLOCK=64000000")
